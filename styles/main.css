@@ -46,35 +46,40 @@ nav a {
   padding: 2em;
 }
 
-/* this is big screen*/
+/* this is small screen*/
 body {
   background-color: brown;
 }
 
-.hero-content {
+div.hero-content {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   justify-content: center;
+  font-size: large;
 }
 
-.nav {
+nav {
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-/*this is for small screen */
-@media screen and (max-width: 1024px) {
+h1 {
+  font-size: 45px;
+}
+
+/*this is for big screen */
+@media screen and (min-width: 1024px) {
   body {
     background-color: aqua;
   }
   .hero-content {
     align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: space-evenly;
   }
-  .h1 {
-    font-size: 20px;
+  h1 {
+    font-size: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
