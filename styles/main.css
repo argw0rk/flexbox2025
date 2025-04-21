@@ -1,2 +1,80 @@
-html,body{background:#d5d5d5;font-family:sans-serif;padding:1em;color:#414141;height:100%}nav a{text-decoration:none;color:#414141}.hero{background:white;padding:2em;margin:1em 0;min-height:400px}.hero-content{display:-webkit-box;display:-ms-flexbox;display:flex}.main-container{background:#eee;padding:2em;margin:1em 0}.mixed-layout{background:white;padding:2em;margin:1em 0}.second-a{background:tomato;color:white;padding:2em}.second-b{background:navy;color:white;padding:2em}
-/*# sourceMappingURL=main.css.map */
+html, body {
+  background: rgb(213, 213, 213);
+  font-family: sans-serif;
+  padding: 1em;
+  color: #414141;
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #414141;
+}
+
+.hero {
+  background: white;
+  padding: 2em;
+  margin: 1em 0;
+  min-height: 400px;
+}
+
+.hero-content {
+  display: flex;
+}
+
+.main-container {
+  background: rgb(238, 238, 238);
+  padding: 2em;
+  margin: 1em 0;
+}
+
+.mixed-layout {
+  background: white;
+  padding: 2em;
+  margin: 1em 0;
+}
+
+.second-a {
+  background: tomato;
+  color: white;
+  padding: 2em;
+}
+
+.second-b {
+  background: navy;
+  color: white;
+  padding: 2em;
+}
+
+/* this is big screen*/
+body {
+  background-color: brown;
+}
+
+.hero-content {
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav {
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/*this is for small screen */
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: aqua;
+  }
+  .hero-content {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .h1 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
