@@ -9,9 +9,8 @@ body{
         align-items: center;
         justify-content: space-around;
         flex-direction: column; justify-content: center;
-        font-size: large;
+        display: flex;
     }
-    
     nav {
         display: flex;
         align-items: center;
@@ -19,7 +18,7 @@ body{
     }
     
     h1 {
-        font-size: 45px;
+        font-size: 4em;
     }
 
 .sidebar{
@@ -42,31 +41,35 @@ body{
         align-items: center ;
         justify-content: center;
         flex-direction: space-evenly;
+       
      
     }
     h1 {
         font-size: 50px;
+        font-size: 4em;
     }
 
+.main-container{
+    display: flex;
+    align-items: center;
+   justify-content:space-evenly;
+  
+}
 .post{
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+ 
 }
-
 .sidebar{
-    background-color: aqua;
+    flex-direction: column;
+    flex-grow: 10;
+   
+    
+}
+.mixed-layout{
+display: flexbox;
+    
 }
 
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
