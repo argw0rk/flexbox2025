@@ -60,13 +60,17 @@ div.hero-content {
 }
 
 nav {
+  display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 h1 {
   font-size: 45px;
+}
+
+.sidebar {
+  background-color: white;
 }
 
 /*this is for big screen */
@@ -81,5 +85,11 @@ h1 {
   }
   h1 {
     font-size: 50px;
+  }
+  .post {
+    background-color: aqua;
+  }
+  .sidebar {
+    background-color: aqua;
   }
 }/*# sourceMappingURL=main.css.map */
