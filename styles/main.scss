@@ -24,7 +24,14 @@ body{
 .sidebar{
     background-color:white;
 }
-
+/* a and b*/
+.mixed-layout {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+   
+    
+}
 
 
 
@@ -49,43 +56,44 @@ body{
         font-size: 4em;
     }
 
-.main-container{
-    display: inline-flex;
-    align-items: center;
+.main-container {
+    display: flex;
+    align-items: stretch;
    justify-content:space-evenly;
+   width: 100px;
+  margin: 10px;
   
 }
 .post{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
+   
  
 }
 .sidebar{
+    display: flex;
     flex-direction: column;
-    flex-grow: 10;
-   
+    width: 200px;
+    margin: 10px;
     
 }
 
 
-
+/* a and b*/
 
 .mixed-layout {
 display: flex;
-flex-direction: row;
 justify-content: flex-start;
+flex-direction: column;
+padding: 10px;
+flex: 50%;
     
 }
 
-.first {
-    display: flex;
-    justify-content:space-evenly;
-    min-width: 2px;
-}
-.second {
-   
-    flex-grow: 10;
 
-}
+
+
+
+
 }
