@@ -50,7 +50,7 @@ body{
     }
 
 .main-container{
-    display: flex;
+    display: inline-flex;
     align-items: center;
    justify-content:space-evenly;
   
@@ -67,9 +67,25 @@ body{
    
     
 }
-.mixed-layout{
-display: flexbox;
+
+
+
+
+.mixed-layout {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
     
 }
 
+.first {
+    display: flex;
+    justify-content:space-evenly;
+    min-width: 2px;
+}
+.second {
+   
+    flex-grow: 10;
+
+}
 }
