@@ -51,22 +51,32 @@ body {
   background-color: brown;
 }
 
-div.hero-content {
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
-}
-
 nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
+.hero-content {
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  display: flex;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   font-size: 4em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar {
@@ -78,30 +88,26 @@ h1 {
   body {
     background-color: aqua;
   }
-  .hero-content {
-    align-items: center;
-    justify-content: center;
-    flex-direction: space-evenly;
-  }
-  h1 {
-    font-size: 50px;
-    font-size: 4em;
-  }
   .main-container {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: row;
   }
-  .post {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .sidebar {
-    flex-direction: column;
-    flex-grow: 10;
+  .post, .sidebar {
+    flex: 1;
   }
   .mixed-layout {
-    display: flexbox;
+    display: flex;
+  }
+  .first, .second {
+    flex: 1;
+    flex-direction: row;
+  }
+  .second {
+    display: flex;
+  }
+  .second-a, .second-b {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
   }
 }/*# sourceMappingURL=main.css.map */

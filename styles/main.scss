@@ -5,32 +5,33 @@
 body{
     background-color:brown;
 }
-    div.hero-content{
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+   .hero-content{
         align-items: center;
         justify-content: space-around;
-        flex-direction: column; justify-content: center;
+        flex-direction: column;
         display: flex;
     }
-    nav {
+    .hero {
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
     }
     
     h1 {
         font-size: 4em;
     }
+    .main-container {
+        display:flex;
+        flex-direction: column;
+    }
 
 .sidebar{
     background-color:white;
-}
-/* a and b*/
-.mixed-layout {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-   
-    
 }
 
 
@@ -44,56 +45,31 @@ body{
 body{
     background-color: aqua;
 }
-    .hero-content {
-        align-items: center ;
-        justify-content: center;
-        flex-direction: space-evenly;
-       
-     
-    }
-    h1 {
-        font-size: 50px;
-        font-size: 4em;
-    }
-
 .main-container {
     display: flex;
-    align-items: stretch;
-   justify-content:space-evenly;
-   width: 100px;
-  margin: 10px;
+    flex-direction: row;
   
 }
-.post{
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
+
+.post, .sidebar{
+    flex: 1;
+}
+
    
- 
-}
-.sidebar{
+ .mixed-layout{
     display: flex;
-    flex-direction: column;
-    width: 200px;
-    margin: 10px;
-    
+ }
+.first, .second {
+    flex:1;
+    flex-direction: row;
 }
-
-
-/* a and b*/
-
-.mixed-layout {
-display: flex;
-justify-content: flex-start;
-flex-direction: column;
-padding: 10px;
-flex: 50%;
-    
+.second{
+    display: flex;
 }
-
-
-
-
-
+.second-a, .second-b {
+    display: flex;
+    flex:1;
+    flex-direction: row;
+}
 
 }
