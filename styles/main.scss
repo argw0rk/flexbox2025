@@ -2,9 +2,7 @@
 
 /* this is small screen*/
 
-body{
-    background-color:brown;
-}
+
 nav {
     display: flex;
     align-items: center;
@@ -42,9 +40,7 @@ nav {
 @media screen and (min-width: 1024px){
     
 
-body{
-    background-color: aqua;
-}
+
 .main-container {
     display: flex;
     flex-direction: row;
